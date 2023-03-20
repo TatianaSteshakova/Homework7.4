@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -9,7 +10,7 @@ void charChange(char* st, char symb)
 }
 
 void trim(char* str) {
-    int len = std::strlen(str);
+    int len = strlen(str);
     int start = 0, end = len - 1;
 
     while (start <= end && isspace(str[start])) {
